@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feb 20 assignment</title>
+	<meta charset="utf-8" />
+
+</head>
+<body>
+
+<p> Are you in Emoji Trouble?</p>
+
+
+<div>
+<button id="demo" onclick="emojiTrouble">PRESS</button>
+</div>
+
+<script>
+
+
+ 
+var emojiTrouble = function (e1Smile, e2Smile){
+  
+if (e1Smile == true && e2Smile == true) {
+	document.write('You are in trouble');
+}
+ else if (e1Smile == true || e2Smile == true) {
+   document.write('You are not in trouble');
+ }
+ 
+ else {
+	document.write('You are in false trouble');
+ }
+ }
+ document.getElementById("demo").onclick = emojiTrouble(true, true);
+ 
+ </script>
+ </body>
+ 
+ </html>
