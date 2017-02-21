@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Library Console List</title>
+<meta =charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+
+
+
+
+<script>
+
+//I couldn't understand how to use Jquery to achieve what i wanted to do. This is all JavaScript. 
+var library = [{
+	title: "Harry Potter",
+	author: "J. K. Rowling",
+	reading_status: "Already Read "
+},
+ {
+	title: "Twilight",
+	author: "Stephanie Meyer",
+	reading_status: "Already Read "
+},
+ {
+	title: "Mockingjay: The final book of the Hunger Games",
+	author: "Suzanne Collins",
+	reading_status: "You still need to Read " 
+}
+]
+var libraryString = "";
+
+for (i = 0; i < library.length; i++){
+	libraryString += library[i].reading_status   + library[i].title + " by " + library[i].author + "." + "\n";
+}
+console.log(libraryString);
+</script>
+</body>
+ 
+
+
+</html>
+
+
+
+
+
+
+
+
+
